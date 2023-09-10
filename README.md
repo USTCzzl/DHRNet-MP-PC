@@ -34,7 +34,7 @@ rosdep install --from-paths src --ignore-src --rosdistro=<your_rosdistro> -y
 # Compiling, X depend on your machine
 catkin_make (catkin build ) -j X
 ```
-
+Installation [tutorial](https://blog.csdn.net/sinat_25068035/article/details/112537399?spm=1001.2014.3001.5501) for librealsense and realsense_ros 
 **Local python requirements can be installed by:**
 
 ```
