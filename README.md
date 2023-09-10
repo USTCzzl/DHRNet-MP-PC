@@ -89,5 +89,17 @@ rosrun mvp_grasping panda_mvp_grasp.py
 rviz
 ```
 
+### Experiment
+Our original reason for proposing this work is that current grasping methods cannot effectively cope with thin and stacked objects, and the following is a comparison between our method and other grasping methods for these two tasks:
+
+
+[![Grasp thin object](https://res.cloudinary.com/marcomontalbano/image/upload/v1694372343/video_to_markdown/images/youtube--cfLAdKWo4u8-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/cfLAdKWo4u8 "Grasp thin object")
+
+
+
+
+[![stacking objects](https://res.cloudinary.com/marcomontalbano/image/upload/v1694372522/video_to_markdown/images/youtube--biuGoTSoupU-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/biuGoTSoupU "stacking objects")
+
+
 
 
