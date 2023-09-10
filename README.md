@@ -2,8 +2,8 @@
 
 This repository contains the implementation of the MP-PC system and experimental code 
 
-```
-## Setup
+
+### Setup
 
 **Hardware:**
 
@@ -14,23 +14,31 @@ This code is designed around a Franka Emika Panda robot using an Intel Realsense
 * [Franka ROS 0.5.0](https://github.com/frankaemika/franka_ros/tree/0.5.0)
 * [Realsense ROS](https://github.com/IntelRealSense/realsense-ros#installation-instructions)
 
-**Installation:**
-'''bash
+### Installation:
+
+```bash
+
+# Preparing the ROS workspace
 mkdir -p catkin_ws/src
 cd catkin_ws/src
+
+# Pay attention to the version when downloading
 git clone https://github.com/USTCzzl/DHRNet-MP-PC/tree/master
-git clone -b checkout 0.5.0 https://github.com/frankaemika/franka_ros.git
+git clone  https://github.com/frankaemika/franka_ros.git
 git clone https://github.com/IntelRealSense/realsense-ros#installation-instructions
 cd ..
+
+# Automatically installing dependencies
 rosdep install --from-paths src --ignore-src --rosdistro=<your_rosdistro> -y
-catkin_make
-'''
+
+# Compiling, X depend on your machine
+catkin_make (catkin build ) -j X
+```
 
 **Local python requirements can be installed by:**
 
-```bash
-pip install -r requirements.txt
 ```
+pip install -r requirements.txt
 
 
 ## Running
@@ -45,7 +53,7 @@ roslaunch mvp_grasping robot_bringup.launch
 roslaunch mvp_grasping wrist_realsense.launch
 
 
-# Start the Multi-View Picking backend
+# Start the MP-PC backend
 roslaunch mvp_grasping grasp_entropy_service.launch
  
 ## Execute Grasping Experiment
@@ -53,6 +61,6 @@ roslaunch mvp_grasping grasp_entropy_service.launch
 # For Multi-View Picking
 rosrun mvp_grasping panda_mvp_grasp.py
 
-
-
+# For visualization
+rviz
 ```
