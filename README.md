@@ -39,7 +39,7 @@ catkin_make (catkin build ) -j X
 
 
 ### Installation(Computer II):
-
+Installation [tutorial](https://blog.csdn.net/sinat_25068035/article/details/112537399?spm=1001.2014.3001.5501) for librealsense and realsense_ros 
 ```bash
 
 # Preparing the ROS workspace
@@ -47,7 +47,7 @@ mkdir -p catkin_ws/src
 cd catkin_ws/src
 
 # Pay attention to the version when downloading
-# Installation [tutorial](https://blog.csdn.net/sinat_25068035/article/details/112537399?spm=1001.2014.3001.5501) for librealsense and realsense_ros 
+
 git clone https://github.com/USTCzzl/DHRNet-MP-PC/tree/master
 git clone  https://github.com/frankaemika/franka_ros.git
 git clone https://github.com/IntelRealSense/realsense-ros#installation-instructions
