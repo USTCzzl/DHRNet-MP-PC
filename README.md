@@ -47,6 +47,7 @@ mkdir -p catkin_ws/src
 cd catkin_ws/src
 
 # Pay attention to the version when downloading
+# Installation [tutorial](https://blog.csdn.net/sinat_25068035/article/details/112537399?spm=1001.2014.3001.5501) for librealsense and realsense_ros 
 git clone https://github.com/USTCzzl/DHRNet-MP-PC/tree/master
 git clone  https://github.com/frankaemika/franka_ros.git
 git clone https://github.com/IntelRealSense/realsense-ros#installation-instructions
@@ -58,7 +59,7 @@ rosdep install --from-paths src --ignore-src --rosdistro=<your_rosdistro> -y
 # Compiling, X depend on your machine
 catkin_make (catkin build ) -j X
 ```
-Installation [tutorial](https://blog.csdn.net/sinat_25068035/article/details/112537399?spm=1001.2014.3001.5501) for librealsense and realsense_ros 
+
 
 **Local python requirements can be installed by:**
 
