@@ -103,5 +103,7 @@ Our original reason for proposing this work is that current grasping methods can
 [![stacking objects](https://res.cloudinary.com/marcomontalbano/image/upload/v1694372522/video_to_markdown/images/youtube--biuGoTSoupU-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/biuGoTSoupU "stacking objects")
 
 
+### Acknowledgement
+Code heavily inspired and modified from [https://github.com/dougsm/mvp_grasp](https://github.com/dougsm/mvp_grasp)
 
 
